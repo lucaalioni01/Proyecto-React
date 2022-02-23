@@ -1,12 +1,13 @@
 
 function NavBar (){
     return (
+      
         <div>
-          
-            <h1>Soy el titulo </h1>
-           
+            <p>logo</p>
+            <li>Inicio</li>
+            <li>Blog</li>
+            <li>Carrito</li>         
         </div>
-        
     )
 }
 

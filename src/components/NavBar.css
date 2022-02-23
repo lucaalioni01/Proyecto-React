@@ -1,0 +1,12 @@
+li {
+    display: inline-block;
+    margin: 2px;
+
+}
+ 
+p{
+    display: inline-block;
+    align-items: center;
+    margin: 4px;
+    font-weight: bold;
+ }

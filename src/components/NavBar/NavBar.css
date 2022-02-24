@@ -10,3 +10,11 @@ p{
     margin: 4px;
     font-weight: bold;
  }
+img{
+    size: 20px;
+}
+/* div{ Generar una className
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+} */

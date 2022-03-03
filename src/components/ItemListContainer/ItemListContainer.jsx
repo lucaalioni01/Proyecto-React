@@ -1,4 +1,5 @@
 import ItemCount from "../ItemCount/ItemCount";
+import Item from "../Item/Item";
 
 function ItemListContainer ({greeting}) {
     console.log ()
@@ -6,6 +7,7 @@ function ItemListContainer ({greeting}) {
       <div>
           <h1>Hola este es mi sitio de {greeting}</h1>
         <ItemCount stock="10" />
+        <Item/>
       </div>
       
     );

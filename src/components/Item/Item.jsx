@@ -1,9 +1,16 @@
-// const task = new Promise ((res, rej) => {
-//     let a 
-// })
+import React from 'react';
+import ItemCount from "../ItemCount/ItemCount";
 
-// function Item ({Item}) {
-//     return
+function Item (){
+
+    const onAdd =(cont)=> {
+        console.log(cont)
+    }
     
-// }
-// export default Item    
+    return(
+
+        <ItemCount initial="1" stock="10" onAdd={onAdd} />
+
+    );
+}
+export default Item

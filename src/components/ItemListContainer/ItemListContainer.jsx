@@ -1,5 +1,5 @@
-import Item from "../Item/Item";
-
+// import Item from "../Item/Item";
+import ItemList from "../ItemList/ItemList";
 
 
 function ItemListContainer ({greeting}) {
@@ -7,7 +7,8 @@ function ItemListContainer ({greeting}) {
     return (
       <div>
           <h1>Hola este es mi sitio de {greeting}</h1>
-          <Item/>
+          
+          <ItemList />
       </div>
       
     );

@@ -17,8 +17,8 @@ function ItemCount({ stock, initial, onAdd }) {
         }
     };
 
-   const agregarCarrito =()=>{
-       onAdd(cont)
+   const agregarCarrito =(props)=>{
+      return onAdd(cont)
     }
 
 

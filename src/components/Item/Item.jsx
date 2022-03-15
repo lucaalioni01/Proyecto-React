@@ -4,7 +4,7 @@ import './Item.css'
 function Item({ producto, stock }) {
 
     const onAdd = (cont) => {
-        console.log(cont)
+        return console.log(cont)
     }
 
     return (

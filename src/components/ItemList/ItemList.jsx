@@ -1,25 +1,14 @@
-import { useState, useEffect } from 'react';
-import {getFetch} from '../../hepers/getFetch';
-import Item from '../Item/Item';
-
-function ItemList() {
-
-  const [productos, setProductos] = useState([])
-
-  useEffect(()=>{ 
-    getFetch
-      .then((respuesta)=>{
-        setProductos(respuesta) 
-
-    })
-  },[])
-
-
-  return(
+function ItemList ({greeting}) {
+  console.log ()
+  return (
     <div>
-      {productos.map((prod)=><Item key={prod.id} producto={prod.producto} stock={prod.stock}/>)}
+        <h1>Hola este es mi sitio de {greeting}</h1>
+        <ItemList />
     </div>
-  )
+    
+  );
 }
+
+
 
 export default ItemList

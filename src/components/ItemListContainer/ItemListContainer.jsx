@@ -1,17 +1,25 @@
-// import Item from "../Item/Item";
-import ItemList from "../ItemList/ItemList";
+import { useState, useEffect } from 'react';
+import {getFetch} from '../../hepers/getFetch';
+import Item from '../Item/Item';
 
 
-function ItemListContainer ({greeting}) {
-    console.log ()
-    return (
-      <div>
-          <h1>Hola este es mi sitio de {greeting}</h1>
-          
-          <ItemList />
-      </div>
-      
-    );
+function ItemListContainer() {
+
+  const [productos, setProductos] = useState([])
+
+  useEffect(()=>{ 
+    getFetch
+      .then((respuesta)=>{
+        setProductos(respuesta) 
+
+    })
+  },[])
+
+
+  return(
+    <div>
+      {productos.map((prod)=><Item key={prod.id} producto={prod.producto} stock={prod.stock}/>)}
+    </div>
+  )
 }
-  
 export default ItemListContainer;
